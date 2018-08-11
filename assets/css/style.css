@@ -1,3 +1,5 @@
+/* Main */
+
 body 
 {
     background-color: #efeee7;
@@ -88,24 +90,11 @@ li a {
     border: 1px solid #ddd;
   }
 
-form {
-    margin: 20px;
-}
-
-textarea {
-    margin-top: 5px;
-}
+  /* About Me */
 
 #main-bio, #image-bio
 {
     float: left;
-}
-
-#submit {
-    background-color: #4aaaa5;
-    width: 75px;
-    height: 35px;
-    color: #ffffff;
 }
 
 #main-bio 
@@ -140,9 +129,9 @@ textarea {
 .work {
     position: relative;
     float: left;
-    width: 274px;
+    width: 294px;
     margin: 10px 0 25px;
-    overflow: auto;
+    overflow: hidden;
   }
   
   .work:nth-child(even) {
@@ -156,11 +145,12 @@ textarea {
     margin-left: 20px;
   }
   
-  .work h3 {
+ .text-block h3 {
     position: absolute;
     bottom: 20px;
     width: 100%;
     padding: 15px;
+    margin-left: 20px;
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
@@ -177,7 +167,8 @@ textarea {
     margin-top: 10px;
     margin-right: 25px;
   }
-  
+
+  /* Contact Form */
 
  #contact-form ul {
     margin-bottom: 20px;
@@ -206,16 +197,20 @@ textarea {
   
   textarea {
     height: 200px;
+    margin: 5px;
   }
   
-  input[type=submit] {
-    padding: 10px 30px;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    background: #4aaaa5;
-    border: 0 none;
-    width: 100px;
-  }
+
+  form {
+    margin: 20px;
+}
+
+
+  #submit {
+    background-color: #4aaaa5;
+    width: 75px;
+    height: 35px;
+    color: #ffffff;
+}
   
 
