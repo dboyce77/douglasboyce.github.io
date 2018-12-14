@@ -1,84 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-    <!--  Javascript files -->
-    <script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60='
-        crossorigin='anonymous'></script>
-
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy'
-        crossorigin='anonymous'></script>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Douglas Boyce</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
-    <style>
-        body {
-            background-color: skyblue;
-        }
-
-        .img-work {
-            width: 640px;
-            height: 480px;
-            margin: 10px;
-            padding: 10px;
-            border: 2px solid transparent;
-            object-fit: cover;
-        }
-
-        .img-work:hover {
-            cursor: pointer;
-            border: 5px solid red;
-
-        }
-
-        h1 {
-            font-size: 24px;
-            color: black;
-            position: center;
-        }
-
-        .main {
-            background-color: royalblue;
-            height: 50px;
-            padding: 10px;
-            margin: 10px;
-        }
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="jumbotron">
-        <div class="main">
-            <h1>Douglas Boyce</h1>
+
+    <header id="masthead">
+        <a href="index.html" id="logo">Douglas Boyce</a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="showcase.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div id="main-container" class="container">
+
+            <!-- main container -->
+            <section class="main-section">
+                <h2>Douglas Boyce</h2>
+            </section>
+
         </div>
 
     </div>
-    <div id="img-work"></div>
-
 </body>
-<script>
-
-    for (let i = 0; i < 4; i++) {
-        var imageWork = $("<img>");
-
-        imageWork.addClass("work-image");
-
-        imageWork.attr("src", "assets/images/portfolio-img-" + (i + 1) + ".jpg");
-
-        $('#img-work').append(imageWork);
-    };
-
-
-    $('.work-image').on('click', function () {
-        alert('image has been clicked');
-
-    });
-</script>
 
 </html>
