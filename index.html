@@ -1,42 +1,91 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <title>Douglas Boyce</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Douglas Boyce</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
-    <header id="masthead">
-        <a href="index.html" id="logo">Douglas Boyce</a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="about.html">About</a>
-            <a href="showcase.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <div class="container">
-        <div class="card border-0 bg-white mb-12">
-            <div class="card-header bg-white border-none">
-                <h2>About Me</h2>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Douglas Boyce</a>
             </div>
-            <div class="card-body border-0 float-left">
-                <img class="img img-circle" id="img-portfolio" src="assets/images/my_picture.jpg">
-                <h2>Full-Stack Developer + Problen-Solver + Elearning Advocate</h2>
-
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li class="active"><a href="showcase.html">Showcase</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Douglas Boyce</h1>
+            <img class="img-circle" src="assets/images/my_picture.jpg" id="img-portfolio" alt="portfolio image">
+            <br><br>
+            <p><span id="message-text">Full-Stack Web Developer + Problem-Solver + Creative Thinker +
+                    Elearning-Advocate</span></p>
+        </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="class-md-4">
+                <p><span id="title-text">Click on the images below to learn more about me</span></p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <a href="about.html" target="_blank">
+                    <button class="btn"><i class="fa fa-id-badge fa-9x" aria-hidden="true"></i></i></button>
+                </a>
+                <p><span id="button-text">About Me</span></p>
+            </div>
+            <div class="col-md-2">
+                    <a href="about.html" target="_blank">
+                <button class="btn"><i class="fa fa-envelope fa-9x" aria-hidden="true"></i></i></button>
+            </a>
+                <p><span id="button-text">Contact Me</span></p>
+            </div>
+            <div class="col-md-2">
+                <button class="btn"><i class="fa fa-image fa-9x" aria-hidden="true"></i></i></button>
+                <p><span id="button-text">Contact Me</span></p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+
+    </div>
+
+
+    <footer class="footer">
+        <p>Douglas Boyce @2018</p>
+    </footer>
+
 </body>
 
-</html>
+</html
